@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-- [Visite o projeto online](https://pietrokp.github.io/desafio-fortunecookie-stage5/)
+- [Visite o projeto online](https://pietrokp.github.io/focusTimer2.0-stage5/)
 
 ## 🔖 Layout
 
