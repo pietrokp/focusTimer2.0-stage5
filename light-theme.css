@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 6rem;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+
+    gap: 15vw;
+
+    margin-top: 17vh;
+}
+
+.timer {
+    margin-top: 4rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 2rem;
+}
+
+.sounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    gap: 30px;
+}
+
+.sound-card {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    
+
+    width: 13.8rem;
+    height: 15.2rem;
+
+    padding: 2.4rem;
+    gap: 3rem;
+
+    border-radius: 2.4rem;
+
+    background: #e1e1e6;
+}
+.sound-card:hover {
+    background-color: #02799d;
+}
+
+.sound-card:hover + input {
+    background-color: white;
+}
+
+.sound-card svg {
+    width: 4.5rem;
+    height: 5.6rem;
+
+    margin-left: 22px;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+span {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+    text-align: center;
+    color: #323238;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    background-color: #323238;
+    border-radius: 10px;
+    height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    background: #323238;
+}
+
+/* light mode hovers */
+input[type="range"]:hover {
+    cursor: pointer;
+}
+
+.sound-card:hover input[type="range"] {
+    background-color: white;
+}
+
+.sound-card:hover input[type="range"]::-webkit-slider-thumb {
+    background-color: white;
+}
+
+.sound-card:hover svg path {
+    fill: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.play:hover path,
+.pause:hover path,
+.moreTime:hover path,
+.lessTime:hover path,
+.themeSwitcher1:hover path {
+    fill: #02799d;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .main {
+        flex-direction: column;
+        margin-top: 3vh;
+        gap: 5rem;
+    }
+
+    .buttons {
+        display: flex;
+        max-width: 32rem;
+        margin-top: 2rem;
+
+        padding-left: .3rem;
+    }
+
+    .sounds {
+        max-width: 32rem;
+    }
+}
+
+@media (max-width: 445px) {
+    span {
+        text-align: center;
+        font-size: 9.8rem;
+    }
+}
